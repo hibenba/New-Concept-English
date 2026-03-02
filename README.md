@@ -20,7 +20,7 @@ This is a **non-commercial, public-benefit project**. 不要钱
 - Suitable for self-learners and parents 适合自学和打印
 - Regular updates and error corrections 有错误就会立即改
 
-> 有平板电脑的同学，配全 Pencil 使用，你会发现新大陆的哟~
+> 有平板电脑的同学，配合 Pencil 使用，你会发现新大陆的哟~
 
 Latest versions are maintained in the official website:
 👉 https://www.ncego.com/ 这是项目的官网地址，功能更多也更强大。
