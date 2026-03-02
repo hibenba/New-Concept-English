@@ -2,10 +2,10 @@
 
 A structured PDF note collection for **New Concept English**, organized into four levels:
 
-- 📗 nce1
-- 📘 nce2
-- 📙 nce3
-- 📕 nce4
+- 📗 nce1 https://www.ncego.com/books/nce1
+- 📘 nce2 https://www.ncego.com/books/nce2
+- 📙 nce3 https://www.ncego.com/books/nce3
+- 📕 nce4 https://www.ncego.com/books/nce4
 
 All notes are carefully handwritten and organized for learning, review, and printing.
 
