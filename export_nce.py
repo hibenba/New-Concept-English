@@ -2,19 +2,6 @@ import os
 import asyncio
 from playwright.async_api import async_playwright
 
-/*
-# 创建一个名为 venv 的虚拟环境
-python3 -m venv venv
-# 激活虚拟环境（激活后，终端命令行前面会多出一个 (venv) 提示符）
-source venv/bin/activate
-#在虚拟环境中安装 Playwright
-pip install playwright
-# 安装浏览器驱动
-playwright install
-#运行你的导出脚本
-python export_nce.py
-*/
-
 async def export_nce_direct():
     async with async_playwright() as p:
         # 启动无头浏览器
@@ -78,3 +65,28 @@ async def export_nce_direct():
 
 if __name__ == "__main__":
     asyncio.run(export_nce_direct())
+
+
+"""
+================================================================================
+developer guide / 专业程序员运行与二次开发说明
+================================================================================
+
+本脚本基于 Python 3 与现代无头浏览器自动化框架 Playwright 开发，旨在高保真、
+自动化地将 https://www.ncego.com 的《新概念英语》1-4册全套笔记批量导出为独立的 A4 PDF 文件。
+
+### 1. 环境准备与依赖安装
+建议在独立的虚拟环境中进行配置（以 macOS / Linux 为例）：
+
+```bash
+# 创建虚拟环境
+python3 -m venv venv
+
+# 激活虚拟环境
+source venv/bin/activate
+
+# 安装 Python 依赖
+pip install playwright
+
+# 安装无头浏览器内核 (Chromium)
+playwright install chromium

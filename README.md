@@ -101,3 +101,30 @@ Learning English is a long-term accumulation process.
 **专注。坚持。每天进步一点点。**
 
 See you at the top. 顶峰相见。
+
+---
+
+## 🛠️ Developer Guide & Automation (开发者与自动化导出)
+
+仓库内置了开源导出脚本 `export_nce.py`，基于 Python 3 + Playwright 框架开发，方便开发者进行本地复现或二次开发。
+
+### 1. 技术亮点
+- **路由直达 (Route Optimization)**：直接调用网站专有的 `?pdf` 渲染视图（`/lessons/{id}?pdf`），自动剥离所有 UI 杂讯，仅保留最干净的笔记正文。
+- **语义化命名 (H1 Sanitization)**：自动提取页面 `<h1>` 标签作为文件名，保留 `&` 及常用标点，防止数字粘连与非法字符报错。
+- **并发与防频 (Rate Limiting)**：基于 `asyncio` 协程处理，内置请求缓冲与重定向安全拦截。
+
+### 2. 使用方法
+
+环境准备与依赖安装：
+
+```bash
+# 1. 创建并激活虚拟环境
+python3 -m venv venv
+source venv/bin/activate
+
+# 2. 安装 Playwright 及浏览器内核
+pip install playwright
+playwright install chromium
+
+# 3. 运行自动化导出脚本
+python export_nce.py
