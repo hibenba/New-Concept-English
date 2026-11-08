@@ -11,6 +11,10 @@ A structured, single-lesson PDF note collection for **New Concept English**, cov
 All notes are carefully crafted and optimized for learning, review, and printing.  
 所有的笔记均经过精心编排与打印优化，非常适合日常学习、复习以及打印使用。
 
+<p align="center">
+  <img src="demo.png" alt="笔记演示">
+</p>
+
 ---
 
 ## 💡 小小说明
